@@ -1,0 +1,50 @@
+-- Total Transactions
+Total Transactions = 
+    VAR _Trans = COUNTROWS(financials)
+    RETURN _Trans
+
+-- Canada Transactions
+Canada Transactions = 
+    VAR _Term = "canada"
+    VAR _CanaTran = CALCULATE([Total Transactions], financials[Country] = _Term)
+    RETURN _CanaTran
+
+-- Cost of Goods Sold (COGS)
+COGS = 
+    SUMX(financials, financials[Units Sold] * financials[Manufacturing Price])
+
+-- Gross Sales
+Gross Sales = 
+    SUMX(financials, financials[Units Sold] * financials[Sale Price])
+
+-- Total Discount
+Total Discount = 
+    SUM(financials[Discounts])
+
+-- Net Sales
+Net Sales = 
+    [Gross Sales] - [Total Discount]
+
+-- Total Profit
+Total Profit = 
+    [Net Sales] - [COGS]
+
+-- Conditional Formatting for Profit Visualization
+Conditional Formating = 
+    VAR VProfit = [Total Profit]
+    RETURN SWITCH(
+        TRUE(),
+        VProfit > 0, "#8250C4",   -- Purple for positive
+        VProfit < 0, "#E7553D"    -- Red for negative
+    )
+
+-- Profit Positive
+Profit Positive = 
+    VAR VProfit = [Total Profit]
+    RETURN IF(VProfit > 0, VProfit, 0)
+
+-- Profit Negative
+Profit Negative = 
+    VAR VProfit = [Total Profit]
+    VAR Vresult = IF(VProfit < 0, VProfit, 0)
+    RETURN Vresult
