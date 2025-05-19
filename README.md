@@ -58,7 +58,7 @@ DAX was used extensively to create customized calculations for KPIs, conditional
 | Total Discount          | £2M       |
 | Total Profit            | £2M       |
 
-![France Analysis](./assets/profit-analysis-france.png)
+![France Analysis](./profit-analysis-france.png)
 
 ---
 
