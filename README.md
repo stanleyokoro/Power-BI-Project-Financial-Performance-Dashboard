@@ -147,7 +147,7 @@ financial-performance-dashboard-powerbi/
 
 **Stanley Chinor Okoro**  
 📧 stanley.chinor@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/timelesshov) | [GitHub](https://github.com/timelesshov)
+🔗 [LinkedIn](https://www.linkedin.com/in/timelesshov) | [GitHub](https://github.com/stanleyokoro)
 
 ---
 
