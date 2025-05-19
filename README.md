@@ -128,17 +128,13 @@ DAX was used extensively to create customized calculations for KPIs, conditional
 ```bash
 financial-performance-dashboard-powerbi/
 │
-├── assets/                        # Visuals & Screenshots
-│   └── profit-analysis-france.png
+├── profit-analysis-france.png
 │
-├── dax-measures/
-│   └── financial-kpis.dax        # All DAX logic used in the dashboard
+├── financial-kpis.dax            # All DAX logic used in the dashboard
 │
-├── pbix/
-│   └── financial-dashboard.pbix  # Power BI file (if sharable)
+├── financial-dashboard.pbix      # Power BI file
 │
-├── README.md                     # Main documentation
-└── LICENSE                       # Project license (MIT or other)
+└── README.md                     # Main documentation
 ```
 
 ---
