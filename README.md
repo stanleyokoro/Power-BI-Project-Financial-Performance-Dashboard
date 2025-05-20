@@ -40,7 +40,7 @@ DAX was used extensively to create customized calculations for KPIs, conditional
 | `Profit Negative`      | Displays only losses (values < 0) |
 | `Conditional Formatting` | Colors for profit vs loss (Purple/Red) |
 
-➡️ See the [`/dax-measures/financial-kpis.dax`](./dax-measures/financial-kpis.dax) file for full definitions.
+➡️ See the [`/financial-kpis.dax`](./financial-kpis.dax) file for full definitions.
 
 ---
 
